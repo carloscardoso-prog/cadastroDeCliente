@@ -1,6 +1,6 @@
 <?php 
 	include "scriptbody/headbody.php";
-	include "ProjetoSQL/cadastroSQL.php";
+	include "ProjetoSQL/loginSQL.php";
 
 	$verify = false;
 
@@ -42,12 +42,13 @@
 
 </style>
 
-<a href="cadastroCliente.php">Voltar</a>
+<a href="cadastroClienteBSJQAJ.php">Voltar</a>
 <div class="body">	
 <?php
 
 	while($row=$result->fetch_array()){
 		$verify = true;
+
 		echo '<div class="alinha_texto">';
 		echo "<br/>";
 		echo "Nome: " . $row['nome'] . "<br/>";
